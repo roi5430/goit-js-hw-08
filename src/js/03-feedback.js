@@ -32,8 +32,8 @@ function fulFill(){
     if (localDataString) {
         userLocal.email = localData.email
         userLocal.message = localData.message
-        inputEmail.value = userLocal.email
-        inputMessage.value = userLocal.message
+        inputEmail.value = userLocal.email || ""
+        inputMessage.value = userLocal.message || ""
     }
     // console.log(localDataString)
     // console.log(localData)
